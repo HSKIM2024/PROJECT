@@ -4,6 +4,16 @@
 
 ## ***사용된 기술스택***
 >[!NOTE]
-> 파이썬
-> Django
-> AWS LightSail
+> - 파이썬
+> - Django
+> - AWS LightSail
+> - Nginx
+> - gunicorn
+> - PostgreSQL & PGAdmin
+> - Ubuntu22.04
+> - MobaXterm
+> - Let's Encrypt SSL서비스
+> - Swagger, Django Rest Framework
+> - Beeware
+> - 안드로이드스튜디오
+> - postman
