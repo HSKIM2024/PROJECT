@@ -4,16 +4,18 @@
 
 ## ***사용된 기술스택***
 >[!NOTE]
-> - 파이썬
-> - Django
-> - AWS LightSail
-> - Nginx
-> - gunicorn
-> - PostgreSQL & PGAdmin
-> - Ubuntu22.04
-> - MobaXterm
-> - Let's Encrypt SSL서비스
-> - Swagger, Django Rest Framework
-> - Beeware
-> - 안드로이드스튜디오
-> - postman
+> - 개발언어 : Python 3.12.5
+> - 개발IDE : Pycharm professional
+> - 웹프레임워크 : Django 
+> - 클라우드 : AWS LightSail
+> - 웹서버 : Nginx
+> - WSGI서버 : gunicorn
+> - DB : PostgreSQL & PGAdmin
+> - 클라우드서버OS : Ubuntu22.04
+> - SSH터미널 : MobaXterm
+> - SSL인증서 : Let's Encrypt
+> - API명세서 : Swagger, Django Rest Framework
+> - 로컬저장소 : GIT
+> - 원격저장소 : GITHUB
+> - 안드로이드 연결 : Beeware , 안드로이드스튜디오
+> - API테스트 : postman
