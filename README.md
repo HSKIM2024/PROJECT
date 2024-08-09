@@ -21,20 +21,20 @@
 
 ## ***사용된 기술스택***
 >[!NOTE]
-> - 개발언어 : Python 3.12.5
-> - 개발IDE : Pycharm professional
-> - 웹프레임워크 : Django 
-> - 클라우드 : AWS LightSail
-> - 웹서버 : Nginx
-> - WSGI서버 : gunicorn
-> - DB : PostgreSQL & PGAdmin
-> - 클라우드서버OS : Ubuntu22.04
-> - SSH터미널 : MobaXterm
-> - SSL인증서 : Let's Encrypt
-> - API명세서 : Swagger, Django Rest Framework
-> - 로컬저장소 : GIT
-> - 원격저장소 : GITHUB
-> - 안드로이드 연결 : Beeware , 안드로이드스튜디오
-> - API테스트 : postman
-> - 업무용메신저 : Slack
-> - 디자인,설계 : Figma
+> - <img src="https://img.shields.io/badge/개발언어 : Python 3.12.5-F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/개발IDE : Pycharm professional-F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/웹프레임워크 : Django -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/클라우드 : AWS LightSail -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/웹서버 : Nginx -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/WSGI서버 : gunicorn -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/DB : PostgreSQL & PGAdmin -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/클라우드서버OS : Ubuntu22.04 -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/SSH터미널 : MobaXterm -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/SSL인증서 : Let's Encrypt -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/API명세서 : Swagger, Django Rest Framework -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/로컬저장소 : GIT -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/원격저장소 : GITHUB -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/안드로이드 연결 : Beeware , 안드로이드스튜디오 -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/API테스트 : postman -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/업무용메신저 : Slack -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/디자인,설계 : Figma -F7DF1E?style=for-the-badge&logoColor=white">
