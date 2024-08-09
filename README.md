@@ -19,3 +19,5 @@
 > - 원격저장소 : GITHUB
 > - 안드로이드 연결 : Beeware , 안드로이드스튜디오
 > - API테스트 : postman
+> - 업무용메신저 : Slack
+> - 디자인,설계 : Figma
