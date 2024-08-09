@@ -4,6 +4,20 @@
 
 * [웹사이트 바로가기](http://localhost:8000/)
 
+#### 기획 및 디자인
+김한수
+|:---:|
+|https://github.com/HSKIM2024
+
+#### 프로젝트매니저
+김한수
+|:---:|
+|https://github.com/HSKIM2024
+
+#### 프로그래머
+김한수
+|:---:|
+|https://github.com/HSKIM2024
 
 ## ***사용된 기술스택***
 >[!NOTE]
