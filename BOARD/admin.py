@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Question,Answer
+from .models import Question,Answer,Profile
 
 class QuestionAdmin(admin.ModelAdmin):
     search_fields = ['subject']
