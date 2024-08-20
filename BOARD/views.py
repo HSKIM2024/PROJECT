@@ -1,18 +1,40 @@
 from django.shortcuts import render,redirect
 from django.utils import timezone
 from .models import Question,Answer
-from django.http import HttpResponseNotAllowed
-from .forms import QuestionForm,AnswerForm,ProfileForm
-from common.forms import UserForm,UserCreationForm
+from BOARD.forms import QuestionForm,AnswerForm,ProfileForm
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.db.models import Q
+from django.db.models import Q,Count
+from django.contrib.auth import logout
+from django.contrib.auth import login,authenticate
+from BOARD.forms import UserForm,UserCreationForm
+from django.http import HttpResponseNotAllowed
+
+
+def LOGOUT_VIEW(request):
+    logout(request)
+    return redirect("index")
+
+def SIGNUP_VIEW(request):
+    if request.method == "POST":
+        form = UserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password) #사용자인증
+            login(request, user) #로그인
+            return redirect("index")
+    else:
+        form = UserForm()
+    return render(request, "BOARD/signup.html", {"form":form})
 
 def index(request):
-    page = request.GET.get('page','1')
-    keyword = request.GET.get('keyword','')
+    page = request.GET.get('page','1') #페이지
+    keyword = request.GET.get('keyword','') #검색어
     QList = Question.objects.order_by('-create_date')
+
     if keyword:
         QList = QList.filter(
             Q(subject__icontains=keyword) | #제목검색
@@ -135,19 +157,3 @@ def answer_recommend(request,answer_id):
     else:
         answer.recommender.add(request.user)
     return redirect("detail",question_id=answer.question.id)
-
-# @login_required(login_url='login_view')
-# def user_mypage_update(request):
-#     if request.method == 'POST':
-#         form = UserUpdateForm(request.POST, instance=request.user)
-#         profileform = ProfileForm(request.POST, request.FILES, instance=request.user.profile)
-#
-#         if form.is_valid() and profileform.is_valid():
-#             form.save()
-#             profileform.save()
-#             messages.success(request,"프로필이 업데이트 되었습니다!")
-#             return redirect("/user/mypage")
-#     else:
-#         user_form = UserForm(instance=request.user)
-#         profile_form = ProfileForm(instance=request.user.profile)
-#     return render(request,'user/mypage_update.html',{'form':user_form,'profileform':profile_form})

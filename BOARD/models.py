@@ -9,7 +9,6 @@ class Question(models.Model):
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True,blank=True)
     recommender = models.ManyToManyField(User,related_name='recommender_question')
-
     def __str__(self):
         return self.subject
 
@@ -21,8 +20,6 @@ class Answer(models.Model):
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True,blank=True)
     recommender = models.ManyToManyField(User,related_name="recommender_answer")
-
-
     def __str__(self):
         return self.content
 
