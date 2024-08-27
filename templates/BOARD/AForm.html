@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
  <div class="container">
-    <h5 class="my-3 border-bottom pb-2">답변등록</h5>
+    <h5 class="my-3 border-bottom pb-2">댓글작성</h5>
     <form method="post">
         {% csrf_token %}
          {% if form.errors %}
@@ -19,11 +19,11 @@
         {% endif %}
         <!-- 오류표시 End -->
         <div class="mb-3">
-            <label for="content" class="form-label">내용</label>
+            <label for="content" class="form-label">댓글내용</label>
             <textarea class="form-control" name="content"
                       id="content" rows="10">{{ form.content.value|default_if_none:'' }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">답변등록</button>
+        <button type="submit" class="btn btn-primary">댓글작성</button>
     </form>
 </div>
 {% endblock %}

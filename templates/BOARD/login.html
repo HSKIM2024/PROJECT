@@ -17,6 +17,16 @@
                    value="{{ form.password.value|default_if_none:'' }}">
         </div>
         <button type="submit" class="btn btn-primary">로그인</button>
+        {% comment %} start social {% endcomment %}
+         {% load socialaccount %}
+         <div class="btn btn-primary bg-success">
+         {% if user.is_authenticated %}
+         <a href="/accounts/logout" type="button" class="text-warning">깃허브로그아웃</a>
+         {% else %}
+         <a href="{% provider_login_url 'github'%}" class="text-warning">깃허브로그인</a>
+         {% endif %}
+         </div>
+         {% comment %} end social {% endcomment %}
     </form>
  </div>
 </div>

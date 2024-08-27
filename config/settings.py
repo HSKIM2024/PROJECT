@@ -17,6 +17,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -72,7 +73,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static')
+    # BASE_DIR / 'static',
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -82,10 +84,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/'
-LOGIN_URL = 'login'
 
-INSTALLED_APPS = [
+INSTALLED_APPS= [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -93,4 +93,29 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'BOARD.apps.BoardConfig',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'github': {'APP': {
+                        'client_id': 'Ov23ctfv3k79zHLg4qJT',
+                        'client_secret': 'f63f6eb2d2cd3d428b9afb707613961d6264b0fb',
+                        'key': ''
+                        }},
+}
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+
+

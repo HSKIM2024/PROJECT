@@ -4,18 +4,6 @@
 {% block content %}
 <div class="container my-3">
     <h2 align="center">웹사이트</h2>
-    <div class="container my-3">
-        <div class="row justify-content-between my-3">
-            <div class="col-2">
-                <select name="sort" id="sort">
-                    <option value="recent"  id="recent">최신순</option>
-                    <option value="recommend" id="recommend">추천순</option>
-                    <option value="comment" id="comment">댓글순</option>
-                </select>
-            </div>
-        </div>
-    </div>
-
     <div class="row my-3">
         <div class="col-12">
             <div class="input-group">
@@ -26,11 +14,10 @@
             </div>
         </div>
     </div>
-
     <table class="table">
         <thead>
-         <a href="{% url 'question_create' %}" class="btn btn-primary bg-success">질문등록</a>
-         <a href="{% url 'index' %}" class="btn btn-primary bg-success">인기게시물</a>
+         <a href="{% url 'view_profile' %}" class="btn btn-primary text-light bg-success">프로필</a>
+         <a href="{% url 'question_create' %}" class="btn btn-primary text-light bg-success">게시물작성</a>
         <tr class="text-center table-info">
             <th>번호</th>
             <th style="width:60%">제목</th>
@@ -53,7 +40,7 @@
                 <span class="text-danger small mx-2">{{"("}}{{question.answer_set.count}}{{")"}}</span>
                 {% endif %}
             </td>
-            <td>{{ question.author }}</td> <!-- 글쓴이추가 -->
+            <td><a href="{% url 'user_profile' question.author.username %}">{{ question.author.username }}</a></td> <!-- 글쓴이추가 -->
             <td>
                 {% if question.recommender.all.count >=  0 %}
                 <span class="badge bg-warning badge-warning px-2 py-1">{{ question.recommender.all.count }}</span>
@@ -64,7 +51,7 @@
         {% endfor %}
         {% else %}
         <tr>
-            <td colspan="4">질문이 없습니다.</td>
+            <td colspan="4">게시물이 없습니다.</td>
         </tr>
         {% endif %}
         </tbody>

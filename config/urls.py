@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
+
 from BOARD import views
 import BOARD.views
 from django.contrib.auth import views as AUTH_VIEW
@@ -22,4 +23,13 @@ urlpatterns = [
     path('BOARD/signup/',BOARD.views.SIGNUP_VIEW, name="signup_view"),
     path('question/recommend/<int:question_id>/',BOARD.views.question_recommend, name='question_recommend'),
     path('answer/recommend/<int:answer_id>/',BOARD.views.answer_recommend, name='answer_recommend'),
+    path('accounts/', include('allauth.urls')),
+    path('follow/<int:user_id>/',views.follow_user,name='follow_user'),
+    path('unfollow/<int:user_id>/',views.unfollow_user,name='unfollow_user'),
+    path('profile/update/',views.update_profile,name='update_profile'),
+    path('profile/view/',views.view_profile,name='view_profile'),
+    path('profile/<str:username>/',views.user_profile,name='user_profile')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
