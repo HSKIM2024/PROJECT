@@ -26,14 +26,19 @@
 > - <img src="https://img.shields.io/badge/클라우드 : AWS LightSail -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/웹서버 : Nginx -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/WSGI서버 : gunicorn -F7DF1E?style=for-the-badge&logoColor=white">
-> - <img src="https://img.shields.io/badge/DB : PostgreSQL & PGAdmin -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/DB : MySQL 8.0 -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/DB Tool: DbVisualizer(Free) -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/클라우드서버OS : Ubuntu22.04 -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/SSH터미널 : MobaXterm -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/SSL인증서 : Let's Encrypt -F7DF1E?style=for-the-badge&logoColor=white">
-> - <img src="https://img.shields.io/badge/API명세서 : Swagger, Django Rest Framework -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/API명세서 : Swagger -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/로컬저장소 : GIT -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/원격저장소 : GITHUB -F7DF1E?style=for-the-badge&logoColor=white">
-> - <img src="https://img.shields.io/badge/안드로이드 연결 : Beeware , 안드로이드스튜디오 -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/안드로이드 연결 : 안드로이드스튜디오 -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/API테스트 : postman -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/업무용메신저 : Slack -F7DF1E?style=for-the-badge&logoColor=white">
 > - <img src="https://img.shields.io/badge/디자인,설계 : Figma -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/리눅스컨테이너 : Docker(WSL사용) -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/도커이미지제작 : VSCODE -F7DF1E?style=for-the-badge&logoColor=white">
+> - <img src="https://img.shields.io/badge/캐싱서버 : Redis -F7DF1E?style=for-the-badge&logoColor=white">
+
